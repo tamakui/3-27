@@ -9,8 +9,8 @@ class UsersController < ApplicationController
   end
 
   def index
-    @users = User.all(params[:id])
-    @books = @user.books.all
+    @users = User.all
+    @user = current_user
   end
   
   def update
