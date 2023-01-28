@@ -22,13 +22,13 @@
       <%= link_to "Home", homes_top_path, class: 'nav-link text-dark' %>
       </li>
       <li class = "nav-item">
-        <%= link_to "Users", homes_top_path, class: 'nav-link text-dark' %>
+        <%= link_to "Users", users_path, class: 'nav-link text-dark' %>
       </li>
       <li class = "nav-item">
-        <%= link_to "Books", homes_top_path, class:  'nav-link text-dark' %>
+        <%= link_to "Books", books_path, class:  'nav-link text-dark' %>
       </li>
       <li class = "nav-item">
-        <%= link_to "Log out", destroy_user_session_path, method: :delete, class: 'nav-link text-blue navbar-dark' %>
+        <%= link_to "Log out", destroy_user_session_path, method: :delete, class: 'nav-link text-light navbar-dark' %>
       </li>
       
       <% else %>
