@@ -10,11 +10,13 @@
    <tr>
 <h1>Book detail</h1>
 <div>
-
+<%= link_to user_path(@book.user_id) do %>
     <p>投稿ユーザー画像: <%= image_tag @book.user.get_profile_image(100,100) %></p>
+    <p>ユーザーネーム: <%= @book.user.name %></p>
+    <% end %>
     <p>Title: <%= @book.title %></p>
     <p>Opinion: <%= @book.body %></p>
-    <p>ユーザーネーム: <%= @book.user.name %></p>
+    
     
     <%if @book.user == current_user %>
      <%= link_to "Destroy", book_path(@book.id), method: :delete, "data-confirm" => "本当に消しますか？" %>
