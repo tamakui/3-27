@@ -3,10 +3,10 @@
   
 <%= form_with model: @book do |f| %>
  <label for="inputTitle">Title</label></br>
-  <%= f.text_field :title, autofocus: true, id:"inputTitle", placeholder:"タイトル"%>
+  <%= f.text_field :title, autofocus: true, id:"inputTitle", placeholder:"タイトル"%><br>
   <label for="inputOpinion">Opinion</label></br>
-  <%= f.text_field :body, placeholder: "編集" %>  
-  <%= f.submit "Update Book"
+  <%= f.text_field :body, placeholder: "編集" %>  <br>
+  <%= f.submit "Update Book" %>
    <%= link_to "Show", book_path(@book) %>
       |
    <%= link_to "Back", books_path %>
