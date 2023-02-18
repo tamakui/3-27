@@ -10,6 +10,7 @@
 <h1>Editing Book</h1>
   
 <%= form_with model: @book do |f| %>
+ <%= render 'layouts/errors', obj: @book %>
  <label for="inputTitle">Title</label></br>
   <%= f.text_field :title, autofocus: true, id:"inputTitle", placeholder:"タイトル"%><br>
   <label for="inputOpinion">Opinion</label></br>
